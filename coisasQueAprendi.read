@@ -1,0 +1,17 @@
+aprendi que  border: 1px solid #cor; cria uma linha divisora
+
+text-shadow é uma propriedade do CSS que coloca uma sombra atrás do texto.
+
+@keyframes wave  /* criar uma animaçao chamada wave*/
+   0%, 100% {
+    transform: translateY(0);
+  }/*inicio e fim*/
+
+ 50% {
+    transform: translateY(-10px);
+  }/*meio*/
+
+
+ transform: scale(1.2); /*aumenta a imagem para 1,2 vezes o tamanho original*/
+
+  box-shadow: 5px 5px 10px rgb(0, 0, 0); sombrinha(X ;Y ;blur-esplahado; cor)
