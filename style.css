@@ -22,15 +22,15 @@ a {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-}
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
 }
+
+
+
 
 /* nav */
 .nav {
@@ -334,9 +334,18 @@ border: 1px solid #6b5344;
     max-width: 900px;
     border-radius: 12px;
 }
-.imglargoago{ /*especial*/
-  width: 200px;
-  border: 5px solid #4A3428;
+.imglargoago {
+    width: 200px;
+    height: 300px;
+    border: 5px solid #4A3428;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imglargoago img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /*efeitos que aprendi no tiktok*/
 
@@ -396,4 +405,55 @@ border: 2px solid #6b5344;
   border-radius: 50%;
   border: 2px solid #d4c4a8;
   background-color: #FBF3E7;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .lista-dicas {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .lista-dicas li {
+        padding: 10px;
+    }
+
+    .imglargoago {
+        width: 50%;
+        height: 50%;
+    }
+ 
+
+    .img.largo {
+        width: 80%;
+        min-height: 150px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .img.largo img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .nav img { 
+        width: 63px; 
+        height: 63px; 
+    } 
+
+    .nav-links {  
+        transform: scale(0.7); 
+        width: 100%; 
+        padding: 10px;  
+        margin: 0 auto;  
+    }
+
+    .nav-links li {  
+        width: auto;
+        height: auto;
+    }
 }

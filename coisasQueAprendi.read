@@ -11,9 +11,13 @@ text-shadow é uma propriedade do CSS que coloca uma sombra atrás do texto.
     transform: translateY(-10px);
   }/*meio*/
 
-
+<header>	Cabeçalho
+<nav>	Menu
+<main>	Conteúdo principal
+<section>	Seções
+<article>	Cada conteúdo/personagem/dica
  transform: scale(1.2); /*aumenta a imagem para 1,2 vezes o tamanho original*/
-
+<em> — dá ênfase ao texto.
   box-shadow: 5px 5px 10px rgb(0, 0, 0); sombrinha(X ;Y ;blur-esplahado; cor)
 
   MODIFICAÇOES FEITA_ TERMINAL PARA O GIT
