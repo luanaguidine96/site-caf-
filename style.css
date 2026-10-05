@@ -611,3 +611,269 @@ h4 {
     height: 300px;
 
     border: 
+
+       }
+
+/* =========================================================
+   AJUSTE FINAL PARA CELULAR
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* NAV */
+
+    .nav {
+        padding: 14px 0 20px;
+    }
+
+    .nav-conteudo {
+        width: 100%;
+        padding: 0 12px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 14px;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        margin: 0;
+        padding: 8px;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 3px;
+
+        border-radius: 30px;
+    }
+
+    .nav-links li {
+        margin: 1px;
+    }
+
+    .nav-links a {
+        padding: 8px 10px;
+
+        font-size: 0.85rem;
+
+        white-space: nowrap;
+    }
+
+
+    /* CABEÇALHO */
+
+    .cabecalho-pagina {
+        width: 100%;
+
+        padding: 40px 16px 25px;
+    }
+
+    .cabecalho-pagina h1 {
+        font-size: 2rem;
+
+        line-height: 1.2;
+
+        margin-bottom: 25px;
+    }
+
+    .cabecalho-pagina img {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        margin: 0 auto;
+
+        border-radius: 25px;
+
+        object-fit: contain;
+    }
+
+
+    /* CARTÃO */
+
+    .cartao {
+        width: 100%;
+
+        margin: 0;
+
+        padding: 28px 16px;
+
+        border-radius: 18px;
+    }
+
+
+    /* IMAGENS GRANDES */
+
+    .img,
+    .img.largo {
+        width: 100%;
+
+        min-height: 0;
+
+        padding: 8px;
+
+        margin: 0 auto 16px;
+    }
+
+    .img img,
+    .img.largo img {
+        display: block;
+
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+    }
+
+
+    /* PASSO A PASSO */
+
+    .passo {
+        width: 100%;
+
+        display: block;
+
+        padding: 25px 0;
+    }
+
+    .passo-numero {
+        width: 55px;
+        height: 55px;
+
+        margin: 0 auto 15px;
+    }
+
+    .passo-texto,
+    .container .passo-texto {
+        width: 100%;
+
+        padding: 18px;
+
+        border-radius: 20px;
+    }
+
+    .passo-texto img {
+        display: block;
+
+        width: auto;
+        max-width: 100%;
+
+        height: auto;
+
+        margin: 15px auto 0;
+    }
+
+
+    /* BOTÕES */
+
+    .botao-download,
+    .botao-secundario {
+        max-width: 100%;
+
+        padding: 13px 18px;
+
+        font-size: 1rem;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR PEQUENO
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .nav-conteudo {
+        padding: 0 8px;
+    }
+
+    .nav img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-links {
+        padding: 7px;
+    }
+
+    .nav-links a {
+        padding: 7px 9px;
+
+        font-size: 0.82rem;
+    }
+
+
+    .cabecalho-pagina {
+        padding: 35px 12px 20px;
+    }
+
+    .cabecalho-pagina h1 {
+        font-size: 1.9rem;
+    }
+
+    .cabecalho-pagina img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .cartao {
+        padding: 25px 14px;
+    }
+
+
+    .botao-secundario {
+        width: 100%;
+    }
+
+
+    .passo-texto {
+        padding: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULAR MUITO PEQUENO
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .nav-links a {
+        padding: 6px 7px;
+
+        font-size: 0.76rem;
+    }
+
+    .cabecalho-pagina h1 {
+        font-size: 1.7rem;
+    }
+
+       }
