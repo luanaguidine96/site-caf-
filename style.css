@@ -457,3 +457,126 @@ border: 2px solid #6b5344;
         height: auto;
     }
 }
+
+.nav-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  position: static;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  margin-left: 0;
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  border-radius: 30px;
+}
+
+.nav-links li {
+  margin: 2px;
+}
+
+.nav-links a {
+  padding: 9px 15px;
+}
+
+.hero {
+  padding: 55px 24px 45px;
+}
+
+.botao-download {
+  box-shadow: 3px 4px 8px rgba(74, 52, 40, 0.25);
+}
+
+.botao-secundario {
+  box-shadow: 3px 4px 8px rgba(74, 52, 40, 0.2);
+}
+
+.passo {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 0;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  border-bottom: 1px dashed #F1E4D2;
+}
+
+.passo-numero {
+  flex: 0 0 60px;
+  margin-top: 2px;
+}
+
+.container .passo-texto {
+  flex: 1;
+
+  width: auto;
+
+  padding: 22px 25px;
+
+  background-color: rgba(251, 243, 231, 0.85);
+
+  border: 1px solid #E1D2C0;
+  border-radius: 20px;
+}
+
+.passo-texto h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.passo-texto p {
+  margin-top: 0;
+}
+
+.passo-texto img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.imglargoago img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .nav-conteudo {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .passo {
+    display: block;
+    padding: 25px 0;
+  }
+
+  .passo-numero {
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  .container .passo-texto {
+    width: 100%;
+    padding: 20px;
+  }
+}
