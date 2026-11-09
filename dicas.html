@@ -39,15 +39,90 @@
     <div class="container">
       <ul class="lista-dicas">
         <li >
-          <div>
-            <h3>Faça missões diárias</h3>
-            <p>Cada missão dá 50 moedinhas</p>
-          </div>
+          <section class="duvidas">
+
+        <h1>Assistência</h1>
+
+        <h2>Como podemos ajudar?</h2>
+
+        <p class="subtitulo">
+            Selecione uma das perguntas abaixo ou me envie sua dúvida.
+        </p>
+
+        <section class="perguntas">
+
+            <button class="botao-secundario" onclick="responder('iphone')">
+                Consigo jogar pelo iphone?
+            </button>
+
+            <button class="botao-secundario" onclick="responder('tempo')">
+                Quanto tempo levou para desenvolver o jogo?
+            </button>
+
+            <button class="botao-secundario" onclick="responder('celular')">
+                O site funciona pelo celular?
+            </button>
+
+            <button class="botao-secundario" onclick="responder('dados')">
+                Meus dados ficam seguros?
+            </button>
+
+            <button class="botao-secundario" onclick="responder('problema')">
+                Encontrei um problema. O que faço?
+            </button>
+
+        </section>
+<br>
+<br>
+
+        <section class="chat">
+
+            <div id="resposta">
+                <strong>Assistente:</strong>
+
+                <p>
+                    Olá! Escolha uma pergunta acima para receber uma resposta.
+                </p>
+            </div>
+
+        </section>
+
+    </section>
         </li>
       </ul>
     </div>
+<script>
+  const respostas = {
 
-    <div class="container">
+    iphone:
+        "Não, o jogo não funciona em iphone, apenas android e computador.",
+
+    tempo:
+        "Levou 21 dias para ser desenvolvido.",
+
+    celular:
+        "Sim! O jogo foi desenvolvido para funcionar no celular também, porém apresenta algumas falhas as vezes.",
+
+    dados:
+        "Não é solicitado em nenhum momento informações pessoais para o usuário ",
+
+    problema:
+        "Caso encontre algum problema durante a utilização do sistema, entre em contato com o email: luanaguidine96@gmail.com."
+};
+
+
+function responder(pergunta) {
+
+    const areaResposta = document.getElementById("resposta");
+
+    areaResposta.innerHTML = `
+        <strong>Assistente:</strong>
+        <p>${respostas[pergunta]}</p>
+    `;
+}
+
+</script>
+    <!-- <div class="container">
       <ul class="lista-dicas">
         <li >
           <div>
@@ -56,7 +131,7 @@
           </div>
         </li>
       </ul>
-    </div>
+    </div> -->
   </section>
 
   <section class="secao">
